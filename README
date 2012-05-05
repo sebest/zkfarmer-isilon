@@ -1,0 +1,6 @@
+# Installation on Isilon
+tar xvfz zk-c.tar.gz
+cd c
+./configure --build=amd64-unknown-kfreebsd-gnu --prefix=/usr/local
+make
+make install
