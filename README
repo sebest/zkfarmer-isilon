@@ -1,6 +1,12 @@
-# Installation on Isilon
+This is a minimal version of zkfarmer for Isilon file servers.
+
+* Installation of the zookeeper CLI
 tar xvfz zk-c.tar.gz
 cd c
 ./configure --build=amd64-unknown-kfreebsd-gnu --prefix=/usr/local
 make
 make install
+
+# Usage of zkjoiner.py
+The environment variable ZKHOST must contain the ip:port of the zookeeper cluster.
+The script zkjoiner.py takes only one argument: the name of the farm to join.
